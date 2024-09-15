@@ -1,0 +1,78 @@
+<div class="navbar">
+    <div class="hodlinfo-nav">
+<h1>HODLINFO</h1>
+</div>
+
+<div class="currency-drop dropdown-color">
+    <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">INR</button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a href="https://hodlinfo.com/BTC-INR" class="dropdown-item">BTC</a></li>
+    </ul>
+</div>
+<div class="dropdown mx-3 dropdown-color">
+    <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">BTC</button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a href="https://hodlinfo.com/BTC-INR" class="dropdown-item">BTC</a></li>
+        <li><a href="https://hodlinfo.com/ETH-INR" class="dropdown-item">ETH</a></li>
+        <li><a href="https://hodlinfo.com/USDT-INR" class="dropdown-item">USDT</a></li>
+        <li><a href="https://hodlinfo.com/XRP-INR" class="dropdown-item">XRP</a></li>
+        <li><a href="https://hodlinfo.com/TRX-INR" class="dropdown-item">TRX</a></li>
+        <li><a href="https://hodlinfo.com/DASH-INR" class="dropdown-item">DASH</a></li>
+        <li><a href="https://hodlinfo.com/ZEC-INR" class="dropdown-item">ZEC</a></li>
+        <li><a href="https://hodlinfo.com/XEM-INR" class="dropdown-item">XEM</a></li>
+        <li><a href="https://hodlinfo.com/IOST-INR" class="dropdown-item">IOST</a></li>
+        <li><a href="https://hodlinfo.com/WIN-INR" class="dropdown-item">WIN</a></li>
+        <li><a href="https://hodlinfo.com/BTT-INR" class="dropdown-item">BIT</a></li>
+        <li><a href="https://hodlinfo.com/WRX-INR" class="dropdown-item">WRX</a></li>
+    </ul>
+</div>
+    <button class="btn btn-secondary dropdown-color dropdown-link"><a href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn">BUY BTC</a></button>
+</div>
+
+<div class="nav-right">
+
+    <div id="count-timer">
+        <div id="timer">10</div>
+    </div>
+
+
+    <div class="px-3">
+    <p class="telegram-link px-3"><i class="fa-brands fa-telegram pl-3"></i>Connect Telegram</p>
+</div>
+    <div class="form-check form-switch">
+        <input class="form-check-input px-10 py-3" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+      </div>
+</div>
+</div>
+
+<script src="/js/script.js"></script>
+
+
+<!-- <script>
+    let timer;
+    let ele = document.getElementById("timer");
+    (function() {
+        let sec = 0;
+        timer = setInterval((ele)=> {
+            ele.innerHTML = '0' + sec;
+            sec++;
+        }, 1000)
+    })
+</script> -->
+
+<script>
+    var counter = 10;
+var interval = setInterval(function() {
+    counter--;
+    // Display 'counter' wherever you want to display it.
+    if (counter <= 0) {
+     		clearInterval(interval);
+      	$('#timer').html("<h3>Count down complete</h3>");  
+        return;
+    }else{
+    	$('#time').text(counter);
+      console.log("Timer --> " + counter);
+    }
+}, 1000);
+</script>
